@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #f4f4f4;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background: #0071dc;
+    color: white;
+}
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+.search {
+    width: 40%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+.nav-links a {
+    margin-left: 15px;
+    color: white;
+    text-decoration: none;
+}
+.hero {
+    text-align: center;
+    background: url("banner.jpg") center/cover;
+    color: rgb(4, 0, 0);
+    padding: 120px 20px;
+    font-style: italic;
+}
+.hero button {
+    padding: 10px 20px;
+    background: #ffc220;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-style: italic;
+}
+.categories {
+    padding: 30px;
+}
+.cat-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+.cat-box {
+    background: white;
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 18px;
+}

@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    font-family: Arial;
+}
+.header {
+    background: #0071dc;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+.cart-item {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    gap: 20px;
+}
+.cart-item img {
+    width: 120px;
+}
+button {
+    background: #ffc220;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+}

@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    font-family: Arial;
+}
+.container {
+    display: flex;
+    padding: 40px;
+}
+.big-img {
+    width: 40%;
+    border-radius: 10px;
+}
+.info {
+    padding-left: 40px;
+}
+.price {
+    font-size: 24px;
+    color: #0071dc;
+}
+button {
+    background: #ffc220;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+}
