@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ShopLux — Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">ShopLux</div>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="cart.html">Cart</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <button id="themeToggle" class="theme-btn">🌙</button>
+  </header>
+  <div class="search-box">
+  <input type="text" placeholder="Search for products, brands and more...">
+  <button type="submit">Search</button>
+  </div>
+  <div class="hero-slider">
+    <div class="slide fade">
+        <img src="https://images.unsplash.com/photo-1585386959984-a4155224a1ad" alt="">
+        <div class="text-box">
+            <h2>More merry for way less</h2>
+            <h1>1,000s of savings!</h1>
+            <button onclick="window.location.href='products.html'">Shop now</button>
+        </div>
+    </div>
+
+    <div class="slide fade">
+        <img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796" alt="">
+        <div class="text-box">
+            <h2>Holiday essentials</h2>
+            <h1>Don't resist</h1>
+            <button>Shop now</button>
+        </div>
+    </div>
+
+    <div class="slide fade">
+        <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f" alt="">
+        <div class="text-box">
+            <h2>Festive finds</h2>
+            <h1>Get more for less</h1>
+            <button>Shop now</button>
+        </div>
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) { showSlides(slideIndex += n); }
+
+function showSlides(n) {
+    let slides = document.getElementsByClassName("slide");
+    if (n > slides.length) slideIndex = 1;
+    if (n < 1) slideIndex = slides.length;
+    for (let i = 0; i < slides.length; i++) slides[i].style.display = "none";
+    slides[slideIndex - 1].style.display = "block";
+}
+
+setInterval(() => { plusSlides(1); }, 4000);
+</script>
+  <main class="container">
+    <section class="hero">
+      <h1>Save More. Live Better.</h1>
+      <p>Best deals every day</p>
+      <a href="products.html" class="btn btn-primary">Shop Now</a>
+    </section>
+
+    <section class="product-grid" id="product-grid">
+      <!-- JS will inject product cards -->
+    </section>
+  </main>
+
+  <footer class="foot">
+    © 2025 ShopLux
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

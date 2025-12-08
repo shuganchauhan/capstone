@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ShopLux — Cart</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">ShopLux</div>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="cart.html" class="active">Cart</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <button id="themeToggle" class="theme-btn">🌙</button>
+  </header>
+
+  <main class="container cart-container">
+    <h2>Your Cart</h2>
+    <div id="cart-list">
+      <!-- JS injects cart items -->
+    </div>
+    <div class="summary">
+      Total: <span id="cart-total">$0</span>
+    </div>
+    <a href="https://www.flipkart.com/" class="btn btn-primary">Buy</a>
+  </main>
+
+  <footer class="footer">
+    © 2025 ShopLux
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
